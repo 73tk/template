@@ -1,0 +1,51 @@
+/* default.scss
+------------------------------------------------------------ */
+html, body {
+  font-size : 10px;
+}
+
+body {
+  font-family : $font-base;
+  line-height : 1.6;
+  color : $color-base;
+}
+
+* {
+  box-sizing : border-box;
+}
+
+h1, h2, h3, h4, h5, h6, strong, em, b {
+  font-weight : bold;
+}
+
+ul, ol, li {
+  list-style : none;
+}
+
+img {
+  max-width : 100%;
+  vertical-align : bottom;
+}
+
+fieldset {
+  border : none;
+}
+
+hr {
+  display : none;
+}
+
+label, button, select, option {
+  cursor : pointer;
+}
+
+a {
+  color : $color-link;
+  outline : none;
+  &:hover {
+    color : $color-link-h;
+  }
+  &:visited {
+    color : $color-link-v;
+  }
+}

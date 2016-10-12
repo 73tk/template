@@ -1,0 +1,172 @@
+  /* form.scss
+  ------------------------------------------------------------ */
+
+// reset
+
+input, button, textarea, select {
+  vertical-align : top;
+  border : none;
+  border-radius : 0;
+  outline : none;
+  background : none;
+
+  -webkit-appearance : none;
+     -moz-appearance : none;
+          appearance : none;
+}
+
+
+textarea {
+  resize : none;
+}
+
+// Chrome placeholder
+::-webkit-input-placeholder {
+  color : #000;
+}
+
+// Firefox placeholder
+::-moz-placeholder {
+  color : #000;
+}
+
+// IE placeholder
+:-ms-input-placeholder {
+  color : #000;
+}
+
+// IE  text
+input::-ms-clear {
+  display : none;
+}
+
+// IE  password
+input::-ms-reveal {
+  display : none;
+}
+
+// textbox
+
+input[type='text'] {
+  line-height : 2em;
+  transition : all 0.25s;
+  border : 1px solid #ddd;
+  &:focus {
+    border : 1px solid #999;
+  }
+}
+
+// textarea
+
+textarea {
+  line-height : 2em;
+  transition : all 0.25s;
+  border : 1px solid #ddd;
+  &:focus {
+    border : 1px solid #999;
+  }
+}
+
+// selectbox
+
+span {
+  position : relative;
+  display : inline-block;
+  width : 200px;
+  border : 1px solid #999;
+  &:after {
+    position : absolute;
+    z-index : -1;
+    top : 50%;
+    right : 0;
+    margin-right : 1em;
+    content : '\25BC';
+    -webkit-transform : translateY(-50%);
+       -moz-transform : translateY(-50%);
+        -ms-transform : translateY(-50%);
+            transform : translateY(-50%);
+  }
+  select, option {
+    line-height : 30px;
+    width : 100%;
+    height : 30px;
+    text-indent : 0.5em;
+  }
+}
+
+// radio button
+
+$radioSize : 16;
+$radioPdL : 5;
+
+input[type='radio'] {
+  display : none;
+  & + label {
+    position : relative;
+    display : inline-block;
+    padding : 3px 3px 3px #{$radioSize + $radioPdL}px;
+    cursor : pointer;
+  }
+  & + label::before {
+    position : absolute;
+    top : 50%;
+    left : 0;
+    width : #{$radioSize}px;
+    height : #{$radioSize}px;
+    margin-top : -#{$radioSize / 2}px;
+    content : '';
+    border : 1px solid #ccc;
+    border-radius : 100%;
+    background : #fff;
+  }
+  &:checked + label::after {
+    position : absolute;
+    top : 50%;
+    left : #{$radioSize / 4}px;
+    width : #{$radioSize / 2}px;
+    height : #{$radioSize / 2}px;
+    margin-top : -#{$radioSize / 4}px;
+    content : '';
+    border-radius : 100%;
+    background : #3498db;
+  }
+}
+
+// checkbox
+
+$checkboxSize : 20;
+$checkboxPdL: 5;
+
+input[type='checkbox'] {
+  display : none;
+  & + label {
+    position : relative;
+    display : inline-block;
+    padding : 3px 3px 3px #{$checkboxSize + $checkboxPdL}px;
+    cursor : pointer;
+  }
+  & + label::before {
+    position : absolute;
+    top : 50%;
+    left : 0;
+    width : #{$checkboxSize}px;
+    height : #{$checkboxSize}px;
+    margin-top : -#{$checkboxSize / 2}px;
+    content : '';
+    border : 1px solid #ccc;
+    background : #fff;
+  }
+  &:checked + label::after {
+    position : absolute;
+    top : 50%;
+    margin-top: -#{$checkboxSize / 2}px;
+    left : 3px;
+    width : #{$checkboxSize - 1}px;
+    height : #{$checkboxSize - 9}px;
+    content : '';
+    -webkit-transform : rotate(-45deg);
+            transform : rotate(-45deg);
+    border-bottom : 2px solid #3498db;
+    border-left : 2px solid #3498db;
+  }
+}
