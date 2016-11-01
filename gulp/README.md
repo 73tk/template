@@ -4,7 +4,7 @@ Frontend start kit by Gulp.
 
 ## Gulp
 
-### devDependencies
+### Dependencies
  - browser-sync
  - gulp
  - gulp-autoprefixer
@@ -24,7 +24,7 @@ Frontend start kit by Gulp.
 
 ## Css
 
-### devDependencies
+### Dependencies
 
 [ress](https://github.com/filipelinhares/ress) is used as reset css.
 
