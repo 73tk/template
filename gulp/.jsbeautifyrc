@@ -1,81 +1,45 @@
 {
   "html": {
-    // インデントに使う文字
     "indent_char": " ",
-    // インデント幅
     "indent_size": 0,
-    // インデントにタブを使用するか
     "indent_with_tabs": false,
-    // 適用するファイル形式？
     "allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg"],
-    // scriptタグ内のbreceの展開形式 [collapse|expand|end-expand|none]
     "brace_style": "collapse",
-    // scriptタグ内のインデントをhtmlに合わせるか
     "indent_scripts": "normal",
-    // 文書の最後に空行を用意するか
     "end_with_newline": false,
-    // e.g. {{#foo}}, {{/foo}}
     "indent_handlebars": false,
-    // htmlタグ直下のheadタグ、bodyタグをインデント
     "indent_inner_html": false,
-    // タグ間で許可する最大空行数
     "max_preserve_newlines": 1,
-    // 空行の許可設定。falseで空行を全て削除
     "preserve_newlines": true,
-    // 整形時にフォーマットしないタグ
     "unformatted": ["a", "span", "img", "code", "pre", "sub", "sup", "em", "strong", "b", "i", "u", "strike", "big", "small", "pre", "h1", "h2", "h3", "h4", "h5", "h6"],
-    // 一行あたりの最大文字数を設定（自動改行）
     "wrap_line_length": 0
   },
   "css": {
-    // インデントに使う文字
     "indent_char": " ",
-    // インデント幅
     "indent_size": 2,
-    // インデントにタブを使用するか
     "indent_with_tabs": false,
-    // 適用するファイル形式？
     "allowed_file_extensions": ["css", "scss", "sass", "less"],
-    // 文書の最後に空行を用意するか
     "end_with_newline": false,
-    // ？（Add a new line after every css rule）
     "newline_between_rules": true,
-    // ？（Separate selectors with newline or not (e.g. "a,\nbr" or "a, br")
     "selector_separator_newline": false）
     "selector_separator": " ",
   },
   "js": {
-    // インデントに使う文字
     "indent_size": 2,
-    // インデント幅
     "indent_char": " ",
-    // 最初の行のインデント
     "indent_level": 0,
-    // インデントにタブを使用するか
     "indent_with_tabs": false,
-    // 空行の許可設定。falseで空行を全て削除
     "preserve_newlines": true,
-    // if (☆a = b☆)にスペースを入れるか
     "space_in_paren": false,
-    // 無名関数 function☆()にスペースを入れるか
     "space_after_anon_function": true,
-    // braceの展開方法
     "brace_style": "collapse",
-    // チェーンメソッドを改行するか
     "break_chained_methods": false,
-    // 配列を展開するか
     "keep_array_indentation": false,
-    // ？（Preserve function indentation）
     "keep_function_indentation": true,
-    // if☆(a = b)にスペースを入れるか
     "space_before_conditional": true,
-    // ？（Should printable characters in strings encoded in \xNN notation be unescaped, "example" vs "\x65\x78\x61\x6d\x70\x6c\x65"）
     "unescape_strings": false,
-    // 横に長くなりすぎないよう何文字目で改行するか
     "wrap_line_length": 0,
-    // 文書の最後に空行を用意するか
     "end_with_newline": false,
-    // 配列内で展開時にカンマを先頭にするか
     "comma_first": false
   }
 }
