@@ -12,6 +12,8 @@ body {
 
 * {
   box-sizing : border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, strong, em, b {
@@ -27,16 +29,8 @@ img {
   vertical-align : bottom;
 }
 
-fieldset {
-  border : none;
-}
-
 hr {
   display : none;
-}
-
-label, button, select, option {
-  cursor : pointer;
 }
 
 a {

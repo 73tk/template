@@ -28,6 +28,18 @@ $mLength: 5;
   }
 }
 
+@for $i from 1 through $mLength {
+  .mr#{$mBase * $i} {
+    margin-right: #{$mBase * $i}px !important;
+  }
+}
+
+@for $j from 1 through $mLength {
+  .ml#{$mBase * $j} {
+    margin-left: #{$mBase * $j}px !important;
+  }
+}
+
 $pBase: 10;
 $pLength: 5;
 
@@ -40,6 +52,18 @@ $pLength: 5;
 @for $l from 1 through $pLength {
   .pb#{$pBase * $l} {
     padding-bottom: #{$pBase * $l}px !important;
+  }
+}
+
+@for $i from 1 through $mLength {
+  .pr#{$mBase * $i} {
+    padding-right: #{$mBase * $i}px !important;
+  }
+}
+
+@for $j from 1 through $mLength {
+  .pl#{$mBase * $j} {
+    padding-left: #{$mBase * $j}px !important;
   }
 }
 

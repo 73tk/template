@@ -9,15 +9,23 @@ input, button, textarea, select {
   border-radius : 0;
   outline : none;
   background : none;
-
+  font-family : inherit;
+  font-size : 100%;
   -webkit-appearance : none;
      -moz-appearance : none;
           appearance : none;
 }
 
+label, button, select, option {
+  cursor : pointer;
+}
 
 textarea {
   resize : none;
+}
+
+fieldset {
+  border : none;
 }
 
 // Chrome placeholder
