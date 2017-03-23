@@ -61,6 +61,23 @@ base.scss is compiled 'common/css/sass/parts/\*scss'.
 
 Use the declare 'use strict;'.
 
+## Images
+
+### Features
+
+It generates a sprite.svg from files of icons directory.
+
+```
+docs
+└─common
+    └─img
+        ├sprite.svg
+        └─icons ↑
+          ├icon-A.svg
+          ├icon-B.svg
+          └icon-C.svg
+```
+
 ## Setting
 
  - .editorconfig
