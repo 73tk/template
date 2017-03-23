@@ -78,6 +78,14 @@ docs
           └icon-C.svg
 ```
 
+#### How to use
+
+```
+<svg>
+  <use xlink:href="/common/img/sprite.svg#icon-A" />
+</svg>
+```
+
 ## Setting
 
  - .editorconfig
