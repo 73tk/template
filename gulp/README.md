@@ -18,18 +18,18 @@ A front-end starter kit by Yarn & Gulp.
  - gulp-svgstore
 
 ### Features
- - compiling scss
- - adding prefixer
- - generating svg sprite
- - browser sync
+ - Compiling scss
+ - Adding prefixer
+ - Generating svg sprite
+ - Browser sync
 
 ## Html
 
 ### Features
 
- - viewport setting is 'width=device-width'.
- - ogp is available.(facebook, twitter)
- - default setting loads those resources.
+ - Viewport setting is 'width=device-width'.
+ - Ogp is available.(facebook, twitter)
+ - Default setting loads those resources.
     - 'common/css/base.css'
     - 'common/js/jquery.min.js'
     - 'common/js/main.js'
