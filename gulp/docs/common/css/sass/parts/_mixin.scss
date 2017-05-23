@@ -13,14 +13,17 @@
 
 // Media query
 
+$small-device : 768px;
+$medium-device : 1200px;
+
 @mixin sp {
-  @media screen and (max-width: $sp) {
+  @media screen and (max-width: $small-device) {
     @content;
   }
 }
 
-@mixin tablet {
-  @media screen and (max-width: $tablet) {
+@mixin tb {
+  @media screen and (max-width: $medium-device) {
     @content;
   }
 }
