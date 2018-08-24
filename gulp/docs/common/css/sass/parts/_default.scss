@@ -5,9 +5,9 @@ html, body {
 }
 
 body {
-  font-family : $font-base;
+  font-family : 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   line-height : 1.6;
-  color : $color-base;
+  color : #333;
 }
 
 * {
@@ -27,25 +27,51 @@ img {
   vertical-align : bottom;
 }
 
-fieldset {
-  border : none;
-}
-
-hr {
-  display : none;
-}
-
 label, button, select, option {
   cursor : pointer;
 }
 
 a {
-  color : $color-link;
   outline : none;
-  &:hover {
-    color : $color-link-h;
-  }
-  &:visited {
-    color : $color-link-v;
-  }
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+input, button, textarea, select {
+  vertical-align : top;
+  border : none;
+  border-radius : 0;
+  outline : none;
+  background : none;
+  -webkit-appearance : none;
+     -moz-appearance : none;
+          appearance : none;
+}
+
+textarea {
+  resize : none;
+}
+
+// Chrome placeholder
+::-webkit-input-placeholder {
+  color : #000;
+}
+
+// Firefox placeholder
+::-moz-placeholder {
+  color : #000;
+}
+
+// IE placeholder
+:-ms-input-placeholder {
+  color : #000;
+}
+
+// IE  text
+input::-ms-clear {
+  display : none;
+}
+
+// IE  password
+input::-ms-reveal {
+  display : none;
 }
